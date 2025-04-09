@@ -1,4 +1,4 @@
-# agente_quindicolor_openai.py (v4 - Refactorizado para Gradio)
+# agente_quindicolor_openai.py (v5 - Refactorizado para Gradio)
 
 import asyncio
 import os
@@ -11,45 +11,50 @@ from typing import List, Dict, Any, Tuple
 try:
     from agents import Agent, Runner
     from agents.mcp import MCPServerStdio
-    # Asumiendo que la definición de StdioServerParameters es interna o no necesaria aquí
 except ImportError as e:
     print(f"Error importando 'openai-agents'. ¿Instalado? Detalle: {e}")
     exit(1)
 
-# --- Configuración Logger (igual que antes) ---
-agent_logger = logging.getLogger('openai_agent_logic') # Cambiado nombre para diferenciar
+# --- Configuración Logger ---
+agent_logger = logging.getLogger('openai_agent_logic')
 agent_logger.setLevel(logging.INFO)
-agent_console_handler = logging.StreamHandler()
-agent_console_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
-if agent_logger.hasHandlers():
-    agent_logger.handlers.clear()
-agent_logger.addHandler(agent_console_handler)
+# Evitar duplicar handlers si se reimporta
+if not agent_logger.handlers:
+    agent_console_handler = logging.StreamHandler()
+    agent_console_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+    agent_logger.addHandler(agent_console_handler)
 
-# --- Carga de .env (igual que antes) ---
+# --- Carga de .env ---
 env_path = os.path.join(os.path.dirname(__file__), '.env')
 if load_dotenv(dotenv_path=env_path):
     agent_logger.info(f".env cargado para la lógica del agente: {env_path}")
 else:
     agent_logger.warning(".env no encontrado. OPENAI_API_KEY debe estar definida.")
-# (Validación de OPENAI_API_KEY omitida por brevedad, pero debería estar)
+
+openai_api_key = os.getenv("OPENAI_API_KEY")
+if not openai_api_key:
+    agent_logger.critical("Error: OPENAI_API_KEY no encontrada. Define la variable en .env o en el entorno.")
+    # No salimos aquí, pero la librería openai fallará después si no está configurada globalmente
+    # exit(1)
 
 
-# --- Configuración Conexión MCP Odoo (igual que antes) ---
+# --- Configuración Conexión MCP Odoo ---
 agent_logger.info("Configurando conexión al servidor MCP Odoo...")
 mcp_server_script_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "mcp_odoo_server.py"))
 if not os.path.exists(mcp_server_script_path):
     agent_logger.critical(f"Script MCP no encontrado: {mcp_server_script_path}")
     exit(1)
 odoo_server_params_dict = {
-    "command": sys.executable,
+    "command": sys.executable, # Usa el python del venv actual
     "args": [mcp_server_script_path],
-    "cwd": os.path.dirname(mcp_server_script_path)
+    "cwd": os.path.dirname(mcp_server_script_path) # Directorio de trabajo
 }
+# Crear la instancia del conector MCP Odoo (se usará en la función process_agent_turn)
 odoo_mcp_server = MCPServerStdio(params=odoo_server_params_dict)
-agent_logger.info("Conector MCPServerStdio configurado.")
+agent_logger.info(f"Conector MCPServerStdio configurado para: {sys.executable} {mcp_server_script_path}")
 
 
-# --- Definición del Agente OpenAI (igual que antes) ---
+# --- Definición del Agente OpenAI ---
 agent_logger.info("Definiendo el Agente OpenAI 'AsistenteQuindicolor'...")
 agente_quindicolor = Agent(
     name="AsistenteQuindicolor",
@@ -62,101 +67,88 @@ agente_quindicolor = Agent(
         "3. Espera la respuesta del usuario con los detalles de los productos.\n"
         "4. Extrae los nombres y cantidades de la respuesta del usuario.\n"
         "5. Usa 'buscar_producto' para obtener el ID de CADA producto mencionado.\n"
-        "6. Construye la lista de líneas en el formato JSON requerido por la herramienta 'crear_cotizacion'.\n"
-        "7. Usa 'crear_cotizacion' con el ID del cliente y la lista de líneas.\n"
-        "Cuando te pidan confirmar una cotización, usa 'confirmar_cotizacion'."
-        "Informa al usuario de las acciones que realizas y de los resultados."
-        "Si un producto no tiene stock, informa al usuario y pregunta cómo proceder."
+        "6. Construye la lista de líneas en el formato JSON requerido por la herramienta 'crear_cotizacion'. El formato es una lista de diccionarios, cada uno con 'product_id' (entero) y 'product_uom_qty' (número). Ejemplo: [{'product_id': 40, 'product_uom_qty': 2}, {'product_id': 38, 'product_uom_qty': 1}]\n"
+        "7. Usa 'crear_cotizacion' con el ID del cliente y la lista de líneas construida.\n"
+        "Cuando te pidan confirmar una cotización, usa 'confirmar_cotizacion' pasando el ID numérico.\n"
+        "Informa al usuario de las acciones que realizas y de los resultados de forma concisa.\n"
+        "Si un producto no tiene stock al buscarlo, informa al usuario y pregunta cómo proceder antes de intentar crear la cotización."
     ),
-    model="gpt-4o",
-    mcp_servers=[odoo_mcp_server]
+    model="gpt-4o", # O el modelo que prefieras/tengas acceso
+    mcp_servers=[odoo_mcp_server] # Pasar la instancia del conector aquí
 )
 agent_logger.info("Agente OpenAI definido.")
 
-# --- NUEVA FUNCIÓN ASÍNCRONA PARA PROCESAR UN TURNO ---
-async def process_agent_turn(user_input: str, history: list) -> Tuple[list, str]:
+# --- FUNCIÓN ASÍNCRONA PARA PROCESAR UN TURNO ---
+async def process_agent_turn(user_input: str, history: list) -> Tuple[list, str, Any | None]:
     """
-    Procesa un turno de conversación: recibe input del usuario y el historial,
-    ejecuta el agente, actualiza el historial y devuelve la respuesta en texto.
-
-    Args:
-        user_input: El último mensaje del usuario.
-        history: El historial de la conversación en formato [{'role': 'user'/'assistant', 'content': ...}]
-
-    Returns:
-        Una tupla: (nuevo_historial_completo, respuesta_texto_asistente)
+    Procesa un turno: recibe input y historial previo, ejecuta agente, devuelve
+    historial actualizado, texto de respuesta y contenido completo de la respuesta del asistente.
     """
-    agent_logger.info(f"Procesando turno. Historial actual: {len(history)} mensajes. Input: '{user_input}'")
-    current_history = history + [{"role": "user", "content": user_input}]
+    agent_logger.info(f"Procesando turno v2. Historial previo: {len(history)} msgs. Input: '{user_input}'")
+    current_history_for_agent = history + [{"role": "user", "content": user_input}]
 
-    response_text = "(El agente no generó respuesta en texto)" # Valor por defecto
-    assistant_response_for_history = None # Para guardar el mensaje completo del asistente
+    response_text = "(El agente no generó respuesta en texto)"
+    assistant_content_for_history = None
 
     try:
-        # El contexto async with gestiona la conexión/desconexión del MCP server para esta llamada
-        # NOTA: Esto puede ser ineficiente si el servidor MCP tarda en arrancar.
-        # Una optimización sería mantener el servidor corriendo globalmente.
-        async with odoo_mcp_server:
-            agent_logger.info("Contexto MCPServerStdio activo para la llamada a Runner.run.")
-            result = await Runner.run(
-                starting_agent=agente_quindicolor,
-                input=current_history
-            )
-            agent_logger.info(f"Runner.run completado. Items nuevos: {len(result.new_items)}")
+        # Usar el mismo conector MCP definido globalmente
+        # El contexto async with ahora se maneja externamente (en Gradio o un loop superior)
+        # Aquí asumimos que odoo_mcp_server está activo o Runner.run lo activa internamente
+        # Nota: La documentación de openai-agents sugiere que el Runner maneja la activación
+        # del servidor MCP si se le pasa en la definición del Agente.
 
-            # Procesar la respuesta del agente (similar a antes)
-            if result.final_output:
-                response_text = str(result.final_output)
-                assistant_response_for_history = {"role": "assistant", "content": response_text}
-            else:
-                last_assistant_message_parts = []
-                text_parts = []
-                for item in result.new_items:
-                    if item.type == "message_output_item":
-                        content = getattr(item.raw, 'content', None) # Acceso seguro al atributo
-                        if isinstance(content, list):
-                            last_assistant_message_parts.extend(content)
-                            text_parts.extend([part.text for part in content if hasattr(part, 'text')])
-                        elif content and hasattr(content, 'text'):
-                            last_assistant_message_parts.append(content)
-                            text_parts.append(content.text)
-                    elif item.type == "tool_call_item":
-                         tool_call_content = getattr(item.raw, 'tool_calls', [getattr(item.raw, 'tool_call', None)]) # Compatibilidad
-                         if tool_call_content[0]: # Si hay llamada
-                              last_assistant_message_parts.append(tool_call_content[0])
+        agent_logger.info(f"Llamando a Runner.run con historial de {len(current_history_for_agent)} mensajes.")
+        result = await Runner.run(
+            starting_agent=agente_quindicolor,
+            input=current_history_for_agent
+        )
+        agent_logger.info(f"Runner.run completado. Items nuevos: {len(result.new_items)}")
 
-                if last_assistant_message_parts:
-                    assistant_response_for_history = {"role": "assistant", "content": last_assistant_message_parts}
-                    response_text = "\n".join(filter(None, text_parts)).strip()
-                    if not response_text and any(item.type in ["tool_call_item", "tool_call_output_item"] for item in result.new_items):
-                        response_text = "(Acción interna realizada...)"
-
-        # Actualizar historial y devolver
-        if assistant_response_for_history:
-            updated_history = current_history + [assistant_response_for_history]
+        # Procesar respuesta
+        if result.final_output:
+            response_text = str(result.final_output)
+            assistant_content_for_history = response_text
         else:
-            updated_history = current_history # No añadir nada si el asistente no respondió
+            last_assistant_message_parts = []
+            text_parts = []
+            for item in result.new_items:
+                if item.type == "message_output_item":
+                    content = getattr(item.raw, 'content', None)
+                    if content:
+                         assistant_content_for_history = content # Guardar el más reciente
+                         if isinstance(content, list):
+                              text_parts.extend([part.get("text", "") for part in content if isinstance(part, dict) and part.get("type") == "text"])
+                         elif isinstance(content, dict) and content.get("type") == "text":
+                              text_parts.append(content.get("text", ""))
+                elif item.type == "tool_call_item":
+                     # Para el historial, podríamos necesitar guardar la llamada
+                     # Esto depende de si queremos que el LLM vea sus propias llamadas a herramientas
+                     # Por ahora, el contenido para el historial será el último 'message_output_item'
+                     pass # No añadir llamada a historial de texto
+
+            response_text = "\n".join(filter(None, text_parts)).strip()
+            if not response_text and any(item.type == "tool_call_item" for item in result.new_items):
+                 response_text = "(Acción interna realizada...)"
+
+        # Crear historial actualizado para devolver
+        updated_history = current_history_for_agent
+        if assistant_content_for_history:
+            # Asegurarse de añadir la respuesta correcta al historial
+            updated_history = updated_history + [{"role": "assistant", "content": assistant_content_for_history}]
+        else:
             agent_logger.warning("No se generó contenido del asistente para añadir al historial.")
 
-        agent_logger.info(f"Turno procesado. Respuesta: '{response_text[:50]}...'. Historial nuevo: {len(updated_history)} mensajes.")
-        return updated_history, response_text
+        agent_logger.info(f"Turno procesado v2. Respuesta: '{response_text[:50]}...'. Historial nuevo: {len(updated_history)} msgs.")
+        return updated_history, response_text, assistant_content_for_history
 
     except Exception as e:
-        agent_logger.error(f"Error en process_agent_turn: {type(e).__name__} - {e}", exc_info=True)
-        # Devolver el error como respuesta y mantener el historial anterior
+        agent_logger.error(f"Error en process_agent_turn v2: {type(e).__name__} - {e}", exc_info=True)
         error_message = f"Error procesando la solicitud: {type(e).__name__}"
-        # Podríamos intentar añadir un mensaje de error al historial si quisiéramos
-        # updated_history = current_history + [{"role": "assistant", "content": error_message}]
-        # return updated_history, error_message
-        return current_history, error_message # Mantenemos historial simple en caso de error
+        # Devolvemos historial ANTES del input del usuario que causó el error
+        return history, error_message, None
 
-# --- Bloque Principal (ya no ejecuta el chat) ---
+# --- Bloque Principal (solo para info) ---
 if __name__ == "__main__":
-    agent_logger.warning("Este script está diseñado para ser importado por la app Gradio (app_gradio.py).")
-    agent_logger.warning("No ejecutará un chat interactivo si se corre directamente.")
-    # Podríamos añadir aquí una prueba simple de la función si quisiéramos:
-    # async def test_run():
-    #     hist, resp = await process_agent_turn("Busca cliente Marc Demo", [])
-    #     print("Respuesta Test:", resp)
-    # asyncio.run(test_run())
+    agent_logger.warning("Este script ('agente_quindicolor_openai.py') contiene la lógica del agente.")
+    agent_logger.warning("Ejecuta 'python app_gradio.py' para iniciar la interfaz de usuario.")
     pass

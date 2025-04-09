@@ -307,3 +307,183 @@ xmlrpc.client.Fault: <Fault 4: "Private methods (such as 'sale.order._create_inv
 2025-04-08 23:10:45,926 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
 2025-04-08 23:10:45,928 - mcp_odoo_server - DEBUG - Odoo Call: model='res.partner', method='search_read', domain=[['name', 'ilike', 'Marc Demo']], fields=['id', 'name', 'email', 'phone'], limit=5
 2025-04-08 23:10:45,952 - mcp_odoo_server - INFO - Odoo devolvió 1 cliente(s) para 'Marc Demo'.
+2025-04-08 23:30:48,499 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-08 23:30:48,500 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-08 23:30:48,500 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-08 23:30:48,500 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: http://localhost:8069, DB: pipix, User: josepipe0909@gmail.com
+2025-04-08 23:30:48,503 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-08 23:30:48,517 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-08 23:30:48,518 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-08 23:30:48,519 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 23:30:48,529 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 23:30:48,530 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 23:30:48,953 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-08 23:30:48,955 - mcp_odoo_server - DEBUG - Creando proxy para object: http://localhost:8069/xmlrpc/2/object
+2025-04-08 23:30:48,956 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-08 23:30:48,958 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-08 23:30:48,968 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-08 23:30:48,969 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-08 23:33:28,535 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-08 23:33:28,536 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-08 23:33:28,536 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-08 23:33:28,536 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: http://localhost:8069, DB: pipix, User: josepipe0909@gmail.com
+2025-04-08 23:33:28,540 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-08 23:33:28,553 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-08 23:33:28,554 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-08 23:33:28,555 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 23:33:28,564 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 23:33:28,566 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 23:33:28,927 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-08 23:33:28,928 - mcp_odoo_server - DEBUG - Creando proxy para object: http://localhost:8069/xmlrpc/2/object
+2025-04-08 23:33:28,929 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-08 23:33:28,931 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-08 23:33:28,939 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-08 23:33:28,940 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-08 23:33:39,107 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-08 23:33:39,107 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-08 23:33:39,107 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-08 23:33:39,107 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: http://localhost:8069, DB: pipix, User: josepipe0909@gmail.com
+2025-04-08 23:33:39,111 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-08 23:33:39,125 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-08 23:33:39,126 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-08 23:33:39,127 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 23:33:39,134 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 23:33:39,135 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 23:33:39,605 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-08 23:33:39,608 - mcp_odoo_server - DEBUG - Creando proxy para object: http://localhost:8069/xmlrpc/2/object
+2025-04-08 23:33:39,611 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-08 23:33:39,613 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-08 23:33:39,630 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-08 23:33:39,633 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-08 23:33:40,871 - mcp_odoo_server - INFO - Ejecutando herramienta 'buscar_cliente' con nombre: 'Marc Demo'
+2025-04-08 23:33:40,873 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 23:33:40,888 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 23:33:40,890 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 23:33:41,259 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-08 23:33:41,260 - mcp_odoo_server - DEBUG - Creando proxy para object: http://localhost:8069/xmlrpc/2/object
+2025-04-08 23:33:41,261 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-08 23:33:41,261 - mcp_odoo_server - DEBUG - Odoo Call: model='res.partner', method='search_read', domain=[['name', 'ilike', 'Marc Demo']], fields=['id', 'name', 'email', 'phone'], limit=5
+2025-04-08 23:33:41,272 - mcp_odoo_server - INFO - Odoo devolvió 1 cliente(s) para 'Marc Demo'.
+2025-04-08 23:33:58,822 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-08 23:33:58,822 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-08 23:33:58,822 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-08 23:33:58,823 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: http://localhost:8069, DB: pipix, User: josepipe0909@gmail.com
+2025-04-08 23:33:58,826 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-08 23:33:58,840 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-08 23:33:58,841 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-08 23:33:58,842 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 23:33:58,851 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 23:33:58,853 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 23:33:59,329 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-08 23:33:59,332 - mcp_odoo_server - DEBUG - Creando proxy para object: http://localhost:8069/xmlrpc/2/object
+2025-04-08 23:33:59,335 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-08 23:33:59,337 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-08 23:33:59,352 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-08 23:33:59,354 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-08 23:34:48,427 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-08 23:34:48,427 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-08 23:34:48,427 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-08 23:34:48,427 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: http://localhost:8069, DB: pipix, User: josepipe0909@gmail.com
+2025-04-08 23:34:48,431 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-08 23:34:48,445 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-08 23:34:48,446 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-08 23:34:48,446 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 23:34:48,456 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 23:34:48,457 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 23:34:48,878 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-08 23:34:48,879 - mcp_odoo_server - DEBUG - Creando proxy para object: http://localhost:8069/xmlrpc/2/object
+2025-04-08 23:34:48,880 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-08 23:34:48,881 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-08 23:34:48,891 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-08 23:34:48,893 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-08 23:34:50,613 - mcp_odoo_server - INFO - Ejecutando herramienta 'buscar_producto' con nombre: 'pintura'
+2025-04-08 23:34:50,614 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 23:34:50,627 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 23:34:50,628 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 23:34:51,004 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-08 23:34:51,004 - mcp_odoo_server - DEBUG - Creando proxy para object: http://localhost:8069/xmlrpc/2/object
+2025-04-08 23:34:51,005 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-08 23:34:51,006 - mcp_odoo_server - DEBUG - Odoo Call: model='product.product', method='search_read', domain=[['name', 'ilike', 'pintura']], fields=['id', 'name', 'default_code', 'list_price', 'qty_available'], limit=5
+2025-04-08 23:34:51,018 - mcp_odoo_server - INFO - Odoo devolvió 0 producto(s) para 'pintura'.
+2025-04-08 23:34:51,021 - mcp_odoo_server - INFO - Ejecutando herramienta 'buscar_producto' con nombre: 'brocha'
+2025-04-08 23:34:51,021 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 23:34:51,031 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 23:34:51,033 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 23:34:51,407 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-08 23:34:51,407 - mcp_odoo_server - DEBUG - Creando proxy para object: http://localhost:8069/xmlrpc/2/object
+2025-04-08 23:34:51,408 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-08 23:34:51,409 - mcp_odoo_server - DEBUG - Odoo Call: model='product.product', method='search_read', domain=[['name', 'ilike', 'brocha']], fields=['id', 'name', 'default_code', 'list_price', 'qty_available'], limit=5
+2025-04-08 23:34:51,421 - mcp_odoo_server - INFO - Odoo devolvió 0 producto(s) para 'brocha'.
+2025-04-08 23:53:27,955 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-08 23:53:27,956 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-08 23:53:27,956 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-08 23:53:27,956 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: http://localhost:8069, DB: pipix, User: josepipe0909@gmail.com
+2025-04-08 23:53:27,960 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-08 23:53:27,973 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-08 23:53:27,974 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-08 23:53:27,975 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 23:53:27,984 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 23:53:27,985 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 23:53:28,399 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-08 23:53:28,402 - mcp_odoo_server - DEBUG - Creando proxy para object: http://localhost:8069/xmlrpc/2/object
+2025-04-08 23:53:28,405 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-08 23:53:28,407 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-08 23:53:28,421 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-08 23:53:28,424 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-08 23:57:07,389 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-08 23:57:07,389 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-08 23:57:07,390 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-08 23:57:07,390 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: http://localhost:8069, DB: pipix, User: josepipe0909@gmail.com
+2025-04-08 23:57:07,393 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-08 23:57:07,407 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-08 23:57:07,408 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-08 23:57:07,409 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 23:57:07,416 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 23:57:07,417 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 23:57:07,815 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-08 23:57:07,816 - mcp_odoo_server - DEBUG - Creando proxy para object: http://localhost:8069/xmlrpc/2/object
+2025-04-08 23:57:07,816 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-08 23:57:07,817 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-08 23:57:07,827 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-08 23:57:07,828 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-08 23:59:00,002 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-08 23:59:00,002 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-08 23:59:00,002 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-08 23:59:00,002 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: http://localhost:8069, DB: pipix, User: josepipe0909@gmail.com
+2025-04-08 23:59:00,009 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-08 23:59:00,032 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-08 23:59:00,034 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-08 23:59:00,035 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 23:59:00,048 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 23:59:00,051 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 23:59:00,694 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-08 23:59:00,695 - mcp_odoo_server - DEBUG - Creando proxy para object: http://localhost:8069/xmlrpc/2/object
+2025-04-08 23:59:00,696 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-08 23:59:00,697 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-08 23:59:00,711 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-08 23:59:00,713 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-08 23:59:45,006 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-08 23:59:45,007 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-08 23:59:45,007 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-08 23:59:45,007 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: http://localhost:8069, DB: pipix, User: josepipe0909@gmail.com
+2025-04-08 23:59:45,014 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-08 23:59:45,037 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-08 23:59:45,039 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-08 23:59:45,040 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 23:59:45,054 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 23:59:45,056 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 23:59:45,756 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-08 23:59:45,759 - mcp_odoo_server - DEBUG - Creando proxy para object: http://localhost:8069/xmlrpc/2/object
+2025-04-08 23:59:45,761 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-08 23:59:45,763 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-08 23:59:45,778 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-08 23:59:45,780 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-08 23:59:47,018 - mcp_odoo_server - INFO - Ejecutando herramienta 'buscar_cliente' con nombre: 'Máximo'
+2025-04-08 23:59:47,020 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 23:59:47,035 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 23:59:47,037 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 23:59:47,707 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-08 23:59:47,709 - mcp_odoo_server - DEBUG - Creando proxy para object: http://localhost:8069/xmlrpc/2/object
+2025-04-08 23:59:47,710 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-08 23:59:47,711 - mcp_odoo_server - DEBUG - Odoo Call: model='res.partner', method='search_read', domain=[['name', 'ilike', 'Máximo']], fields=['id', 'name', 'email', 'phone'], limit=5
+2025-04-08 23:59:47,730 - mcp_odoo_server - INFO - Odoo devolvió 0 cliente(s) para 'Máximo'.
