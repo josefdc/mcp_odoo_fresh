@@ -258,6 +258,50 @@ def confirmar_cotizacion(cotizacion_id: int) -> str:
     except Exception as e:
         logger.error(f"Error inesperado en confirmar_cotizacion: {type(e).__name__} - {e}", exc_info=True)
         return f"Error inesperado del servidor al confirmar cotización: {type(e).__name__}"
+@app.tool()
+def listar_productos() -> str:
+    """
+    Lista los primeros 20 productos vendibles disponibles en Odoo.
+
+    Args:
+        None
+
+    Returns:
+        Una cadena de texto formateada con la lista de productos (ID, Nombre, Código, Precio)
+        o un mensaje de error.
+    """
+    logger.info(f"Tool: listar_productos ejecutado.")
+    conn = get_odoo_connection_details()
+    if not conn: return "Error: No se pudo conectar con Odoo."
+    try:
+        # Dominio para buscar solo productos que se pueden vender
+        domain = [['sale_ok', '=', True]]
+        # Campos útiles (quitamos qty_available para que sea más rápido)
+        fields = ['id', 'name', 'default_code', 'list_price']
+        limit = 20 # Límite para no sobrecargar
+
+        logger.debug(f"Odoo Call: product.product.search_read, domain={domain}, fields={fields}, limit={limit}")
+        productos = conn['models'].execute_kw(
+            conn['db'], conn['uid'], conn['password'],
+            'product.product','search_read',
+            [domain],
+            {'fields': fields, 'limit': limit}
+        )
+        logger.info(f"Odoo devolvió {len(productos)} producto(s) (límite {limit}).")
+
+        if not productos: return "No se encontraron productos vendibles."
+
+        respuesta = f"Mostrando los primeros {len(productos)} productos vendibles:\n"
+        for p in productos:
+            respuesta += f"  - ID:{p.get('id')} Nom:{p.get('name')} Cod:{p.get('default_code','-')} P:{p.get('list_price',0)}\n"
+        return respuesta.strip()
+
+    except xmlrpc.client.Fault as e:
+        logger.error(f"Error Odoo en listar_productos: {e.faultString}")
+        return f"Error Odoo al listar productos: {e.faultString}"
+    except Exception as e:
+        logger.error(f"Error inesperado en listar_productos: {e}", exc_info=True)
+        return f"Error servidor al listar productos: {type(e).__name__}"
 
 # --- HERRAMIENTA ELIMINADA ---
 # La función crear_factura_desde_pedido(pedido_id: int) -> str fue eliminada
