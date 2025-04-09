@@ -544,3 +544,757 @@ xmlrpc.client.Fault: <Fault 4: "Private methods (such as 'sale.order._create_inv
 2025-04-09 01:21:36,269 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
 2025-04-09 01:21:36,270 - mcp_odoo_server - DEBUG - Odoo Call: product.product.search_read, domain=[['sale_ok', '=', True]], fields=['id', 'name', 'default_code', 'list_price'], limit=20
 2025-04-09 01:21:36,284 - mcp_odoo_server - INFO - Odoo devolvió 20 producto(s) (límite 20).
+2025-04-09 02:49:54,723 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 02:49:54,724 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 02:49:54,724 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 02:49:54,724 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: ODOO_URL=https://aguirrex-sirius-odoo.odoo.com, DB: aguirrex-sirius-odoo, User: Administrador
+2025-04-09 02:49:54,728 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 02:49:54,743 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 02:49:54,744 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 02:49:54,744 - mcp_odoo_server - DEBUG - Intentando conectar a common: ODOO_URL=https://aguirrex-sirius-odoo.odoo.com/xmlrpc/2/common
+2025-04-09 02:49:54,745 - mcp_odoo_server - ERROR - Error inesperado durante conexión/autenticación Odoo: OSError - unsupported XML-RPC protocol
+Traceback (most recent call last):
+  File "/home/josefdc/hackathon_odoo/mcp_odoo_fresh/mcp_odoo_server.py", line 81, in get_odoo_connection_details
+    common = xmlrpc.client.ServerProxy(common_url)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1429, in __init__
+    raise OSError("unsupported XML-RPC protocol")
+OSError: unsupported XML-RPC protocol
+2025-04-09 02:49:54,811 - mcp_odoo_server - ERROR - Verificación inicial de conexión Odoo: FALLÓ. Revisa logs y configuración.
+2025-04-09 02:49:54,811 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 02:49:56,989 - mcp_odoo_server - INFO - Tool: listar_productos ejecutado.
+2025-04-09 02:49:56,989 - mcp_odoo_server - DEBUG - Intentando conectar a common: ODOO_URL=https://aguirrex-sirius-odoo.odoo.com/xmlrpc/2/common
+2025-04-09 02:49:56,990 - mcp_odoo_server - ERROR - Error inesperado durante conexión/autenticación Odoo: OSError - unsupported XML-RPC protocol
+Traceback (most recent call last):
+  File "/home/josefdc/hackathon_odoo/mcp_odoo_fresh/mcp_odoo_server.py", line 81, in get_odoo_connection_details
+    common = xmlrpc.client.ServerProxy(common_url)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1429, in __init__
+    raise OSError("unsupported XML-RPC protocol")
+OSError: unsupported XML-RPC protocol
+2025-04-09 02:51:21,377 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 02:51:21,378 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 02:51:21,378 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 02:51:21,378 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: ODOO_URL=https://aguirrex-sirius-odoo.odoo.com, DB: aguirrex-sirius-odoo, User: admin
+2025-04-09 02:51:21,382 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 02:51:21,396 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 02:51:21,397 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 02:51:21,398 - mcp_odoo_server - DEBUG - Intentando conectar a common: ODOO_URL=https://aguirrex-sirius-odoo.odoo.com/xmlrpc/2/common
+2025-04-09 02:51:21,398 - mcp_odoo_server - ERROR - Error inesperado durante conexión/autenticación Odoo: OSError - unsupported XML-RPC protocol
+Traceback (most recent call last):
+  File "/home/josefdc/hackathon_odoo/mcp_odoo_fresh/mcp_odoo_server.py", line 81, in get_odoo_connection_details
+    common = xmlrpc.client.ServerProxy(common_url)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1429, in __init__
+    raise OSError("unsupported XML-RPC protocol")
+OSError: unsupported XML-RPC protocol
+2025-04-09 02:51:21,465 - mcp_odoo_server - ERROR - Verificación inicial de conexión Odoo: FALLÓ. Revisa logs y configuración.
+2025-04-09 02:51:21,466 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 02:51:30,493 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 02:51:30,493 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 02:51:30,493 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 02:51:30,493 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: ODOO_URL=https://aguirrex-sirius-odoo.odoo.com, DB: aguirrex-sirius-odoo, User: admin
+2025-04-09 02:51:30,498 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 02:51:30,511 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 02:51:30,512 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 02:51:30,513 - mcp_odoo_server - DEBUG - Intentando conectar a common: ODOO_URL=https://aguirrex-sirius-odoo.odoo.com/xmlrpc/2/common
+2025-04-09 02:51:30,514 - mcp_odoo_server - ERROR - Error inesperado durante conexión/autenticación Odoo: OSError - unsupported XML-RPC protocol
+Traceback (most recent call last):
+  File "/home/josefdc/hackathon_odoo/mcp_odoo_fresh/mcp_odoo_server.py", line 81, in get_odoo_connection_details
+    common = xmlrpc.client.ServerProxy(common_url)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1429, in __init__
+    raise OSError("unsupported XML-RPC protocol")
+OSError: unsupported XML-RPC protocol
+2025-04-09 02:51:30,580 - mcp_odoo_server - ERROR - Verificación inicial de conexión Odoo: FALLÓ. Revisa logs y configuración.
+2025-04-09 02:51:30,581 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 02:51:31,843 - mcp_odoo_server - INFO - Tool: listar_productos ejecutado.
+2025-04-09 02:51:31,845 - mcp_odoo_server - DEBUG - Intentando conectar a common: ODOO_URL=https://aguirrex-sirius-odoo.odoo.com/xmlrpc/2/common
+2025-04-09 02:51:31,846 - mcp_odoo_server - ERROR - Error inesperado durante conexión/autenticación Odoo: OSError - unsupported XML-RPC protocol
+Traceback (most recent call last):
+  File "/home/josefdc/hackathon_odoo/mcp_odoo_fresh/mcp_odoo_server.py", line 81, in get_odoo_connection_details
+    common = xmlrpc.client.ServerProxy(common_url)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1429, in __init__
+    raise OSError("unsupported XML-RPC protocol")
+OSError: unsupported XML-RPC protocol
+2025-04-09 02:52:38,836 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 02:52:38,836 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 02:52:38,836 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 02:52:38,836 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo.odoo.com, DB: aguirrex-sirius-odoo, User: admin
+2025-04-09 02:52:38,840 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 02:52:38,855 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 02:52:38,856 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 02:52:38,856 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo.odoo.com/xmlrpc/2/common
+2025-04-09 02:52:39,297 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 02:52:39,300 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo'...
+2025-04-09 02:52:39,511 - mcp_odoo_server - ERROR - Error XML-RPC Odoo: Fault 1 - Traceback (most recent call last):
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 104, in __new__
+    return cls.registries[db_name]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: 'aguirrex-sirius-odoo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 165, in xmlrpc_2
+    response = self._xmlrpc(service)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 139, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/http.py", line 398, in dispatch_rpc
+    return dispatch(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/service/common.py", line 58, in dispatch
+    return g[exp_method_name](*params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/service/common.py", line 26, in exp_authenticate
+    res_users = Registry(db)['res.users']
+                ^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 106, in __new__
+    return cls.new(db_name)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 114, in new
+    registry.init(db_name)
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 206, in init
+    with closing(self.cursor()) as cr:
+                 ^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 1005, in cursor
+    return self._db.cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 785, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 712, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "192.168.1.1", port 5432 failed: FATAL:  database "aguirrex-sirius-odoo" does not exist
+
+Traceback (most recent call last):
+  File "/home/josefdc/hackathon_odoo/mcp_odoo_fresh/mcp_odoo_server.py", line 86, in get_odoo_connection_details
+    uid = common.authenticate(ODOO_DB, ODOO_USER, ODOO_PASSWORD, {})
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1122, in __call__
+    return self.__send(self.__name, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1461, in __request
+    response = self.__transport.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1166, in request
+    return self.single_request(host, handler, request_body, verbose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1182, in single_request
+    return self.parse_response(resp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1351, in parse_response
+    return u.close()
+           ^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 668, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault 1: 'Traceback (most recent call last):\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 104, in __new__\n    return cls.registries[db_name]\n           ~~~~~~~~~~~~~~^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/lru.py", line 33, in __getitem__\n    a = self.d[obj]\n        ~~~~~~^^^^^\nKeyError: \'aguirrex-sirius-odoo\'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 165, in xmlrpc_2\n    response = self._xmlrpc(service)\n               ^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 139, in _xmlrpc\n    result = dispatch_rpc(service, method, params)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/http.py", line 398, in dispatch_rpc\n    return dispatch(method, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/service/common.py", line 58, in dispatch\n    return g[exp_method_name](*params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/service/common.py", line 26, in exp_authenticate\n    res_users = Registry(db)[\'res.users\']\n                ^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 106, in __new__\n    return cls.new(db_name)\n           ^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 114, in new\n    registry.init(db_name)\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 206, in init\n    with closing(self.cursor()) as cr:\n                 ^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 1005, in cursor\n    return self._db.cursor()\n           ^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 785, in cursor\n    return Cursor(self.__pool, self.__dbname, self.__dsn)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 288, in __init__\n    self._cnx = pool.borrow(dsn)\n                ^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 712, in borrow\n    result = psycopg2.connect(\n             ^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npsycopg2.OperationalError: connection to server at "192.168.1.1", port 5432 failed: FATAL:  database "aguirrex-sirius-odoo" does not exist\n\n'>
+2025-04-09 02:52:39,757 - mcp_odoo_server - ERROR - Verificación inicial de conexión Odoo: FALLÓ. Revisa logs y configuración.
+2025-04-09 02:52:39,758 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 02:52:56,800 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 02:52:56,801 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 02:52:56,801 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 02:52:56,801 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo.odoo.com, DB: aguirrex-sirius-odoo, User: admin
+2025-04-09 02:52:56,805 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 02:52:56,821 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 02:52:56,822 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 02:52:56,822 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo.odoo.com/xmlrpc/2/common
+2025-04-09 02:52:57,143 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 02:52:57,144 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo'...
+2025-04-09 02:52:57,342 - mcp_odoo_server - ERROR - Error XML-RPC Odoo: Fault 1 - Traceback (most recent call last):
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 104, in __new__
+    return cls.registries[db_name]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: 'aguirrex-sirius-odoo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 165, in xmlrpc_2
+    response = self._xmlrpc(service)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 139, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/http.py", line 398, in dispatch_rpc
+    return dispatch(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/service/common.py", line 58, in dispatch
+    return g[exp_method_name](*params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/service/common.py", line 26, in exp_authenticate
+    res_users = Registry(db)['res.users']
+                ^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 106, in __new__
+    return cls.new(db_name)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 114, in new
+    registry.init(db_name)
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 206, in init
+    with closing(self.cursor()) as cr:
+                 ^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 1005, in cursor
+    return self._db.cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 785, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 712, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "192.168.1.1", port 5432 failed: FATAL:  database "aguirrex-sirius-odoo" does not exist
+
+Traceback (most recent call last):
+  File "/home/josefdc/hackathon_odoo/mcp_odoo_fresh/mcp_odoo_server.py", line 86, in get_odoo_connection_details
+    uid = common.authenticate(ODOO_DB, ODOO_USER, ODOO_PASSWORD, {})
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1122, in __call__
+    return self.__send(self.__name, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1461, in __request
+    response = self.__transport.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1166, in request
+    return self.single_request(host, handler, request_body, verbose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1182, in single_request
+    return self.parse_response(resp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1351, in parse_response
+    return u.close()
+           ^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 668, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault 1: 'Traceback (most recent call last):\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 104, in __new__\n    return cls.registries[db_name]\n           ~~~~~~~~~~~~~~^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/lru.py", line 33, in __getitem__\n    a = self.d[obj]\n        ~~~~~~^^^^^\nKeyError: \'aguirrex-sirius-odoo\'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 165, in xmlrpc_2\n    response = self._xmlrpc(service)\n               ^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 139, in _xmlrpc\n    result = dispatch_rpc(service, method, params)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/http.py", line 398, in dispatch_rpc\n    return dispatch(method, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/service/common.py", line 58, in dispatch\n    return g[exp_method_name](*params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/service/common.py", line 26, in exp_authenticate\n    res_users = Registry(db)[\'res.users\']\n                ^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 106, in __new__\n    return cls.new(db_name)\n           ^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 114, in new\n    registry.init(db_name)\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 206, in init\n    with closing(self.cursor()) as cr:\n                 ^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 1005, in cursor\n    return self._db.cursor()\n           ^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 785, in cursor\n    return Cursor(self.__pool, self.__dbname, self.__dsn)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 288, in __init__\n    self._cnx = pool.borrow(dsn)\n                ^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 712, in borrow\n    result = psycopg2.connect(\n             ^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npsycopg2.OperationalError: connection to server at "192.168.1.1", port 5432 failed: FATAL:  database "aguirrex-sirius-odoo" does not exist\n\n'>
+2025-04-09 02:52:57,578 - mcp_odoo_server - ERROR - Verificación inicial de conexión Odoo: FALLÓ. Revisa logs y configuración.
+2025-04-09 02:52:57,578 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 02:52:58,747 - mcp_odoo_server - INFO - Tool: listar_productos ejecutado.
+2025-04-09 02:52:58,748 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo.odoo.com/xmlrpc/2/common
+2025-04-09 02:52:59,052 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 02:52:59,055 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo'...
+2025-04-09 02:52:59,267 - mcp_odoo_server - ERROR - Error XML-RPC Odoo: Fault 1 - Traceback (most recent call last):
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 104, in __new__
+    return cls.registries[db_name]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: 'aguirrex-sirius-odoo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 165, in xmlrpc_2
+    response = self._xmlrpc(service)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 139, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/http.py", line 398, in dispatch_rpc
+    return dispatch(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/service/common.py", line 58, in dispatch
+    return g[exp_method_name](*params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/service/common.py", line 26, in exp_authenticate
+    res_users = Registry(db)['res.users']
+                ^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 106, in __new__
+    return cls.new(db_name)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 114, in new
+    registry.init(db_name)
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 206, in init
+    with closing(self.cursor()) as cr:
+                 ^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 1005, in cursor
+    return self._db.cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 785, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 712, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "192.168.1.1", port 5432 failed: FATAL:  database "aguirrex-sirius-odoo" does not exist
+
+Traceback (most recent call last):
+  File "/home/josefdc/hackathon_odoo/mcp_odoo_fresh/mcp_odoo_server.py", line 86, in get_odoo_connection_details
+    uid = common.authenticate(ODOO_DB, ODOO_USER, ODOO_PASSWORD, {})
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1122, in __call__
+    return self.__send(self.__name, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1461, in __request
+    response = self.__transport.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1166, in request
+    return self.single_request(host, handler, request_body, verbose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1182, in single_request
+    return self.parse_response(resp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1351, in parse_response
+    return u.close()
+           ^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 668, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault 1: 'Traceback (most recent call last):\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 104, in __new__\n    return cls.registries[db_name]\n           ~~~~~~~~~~~~~~^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/lru.py", line 33, in __getitem__\n    a = self.d[obj]\n        ~~~~~~^^^^^\nKeyError: \'aguirrex-sirius-odoo\'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 165, in xmlrpc_2\n    response = self._xmlrpc(service)\n               ^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 139, in _xmlrpc\n    result = dispatch_rpc(service, method, params)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/http.py", line 398, in dispatch_rpc\n    return dispatch(method, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/service/common.py", line 58, in dispatch\n    return g[exp_method_name](*params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/service/common.py", line 26, in exp_authenticate\n    res_users = Registry(db)[\'res.users\']\n                ^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 106, in __new__\n    return cls.new(db_name)\n           ^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 114, in new\n    registry.init(db_name)\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 206, in init\n    with closing(self.cursor()) as cr:\n                 ^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 1005, in cursor\n    return self._db.cursor()\n           ^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 785, in cursor\n    return Cursor(self.__pool, self.__dbname, self.__dsn)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 288, in __init__\n    self._cnx = pool.borrow(dsn)\n                ^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 712, in borrow\n    result = psycopg2.connect(\n             ^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npsycopg2.OperationalError: connection to server at "192.168.1.1", port 5432 failed: FATAL:  database "aguirrex-sirius-odoo" does not exist\n\n'>
+2025-04-09 02:53:59,761 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 02:53:59,761 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 02:53:59,761 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 02:53:59,762 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo.odoo.com, DB: aguirrex-sirius-odoo, User: Administrador
+2025-04-09 02:53:59,765 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 02:53:59,779 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 02:53:59,780 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 02:53:59,781 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo.odoo.com/xmlrpc/2/common
+2025-04-09 02:54:00,062 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 02:54:00,065 - mcp_odoo_server - DEBUG - Autenticando usuario 'Administrador' en DB 'aguirrex-sirius-odoo'...
+2025-04-09 02:54:00,271 - mcp_odoo_server - ERROR - Error XML-RPC Odoo: Fault 1 - Traceback (most recent call last):
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 104, in __new__
+    return cls.registries[db_name]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: 'aguirrex-sirius-odoo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 165, in xmlrpc_2
+    response = self._xmlrpc(service)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 139, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/http.py", line 398, in dispatch_rpc
+    return dispatch(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/service/common.py", line 58, in dispatch
+    return g[exp_method_name](*params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/service/common.py", line 26, in exp_authenticate
+    res_users = Registry(db)['res.users']
+                ^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 106, in __new__
+    return cls.new(db_name)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 114, in new
+    registry.init(db_name)
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 206, in init
+    with closing(self.cursor()) as cr:
+                 ^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 1005, in cursor
+    return self._db.cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 785, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 712, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "192.168.1.1", port 5432 failed: FATAL:  database "aguirrex-sirius-odoo" does not exist
+
+Traceback (most recent call last):
+  File "/home/josefdc/hackathon_odoo/mcp_odoo_fresh/mcp_odoo_server.py", line 86, in get_odoo_connection_details
+    uid = common.authenticate(ODOO_DB, ODOO_USER, ODOO_PASSWORD, {})
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1122, in __call__
+    return self.__send(self.__name, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1461, in __request
+    response = self.__transport.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1166, in request
+    return self.single_request(host, handler, request_body, verbose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1182, in single_request
+    return self.parse_response(resp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1351, in parse_response
+    return u.close()
+           ^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 668, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault 1: 'Traceback (most recent call last):\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 104, in __new__\n    return cls.registries[db_name]\n           ~~~~~~~~~~~~~~^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/lru.py", line 33, in __getitem__\n    a = self.d[obj]\n        ~~~~~~^^^^^\nKeyError: \'aguirrex-sirius-odoo\'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 165, in xmlrpc_2\n    response = self._xmlrpc(service)\n               ^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 139, in _xmlrpc\n    result = dispatch_rpc(service, method, params)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/http.py", line 398, in dispatch_rpc\n    return dispatch(method, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/service/common.py", line 58, in dispatch\n    return g[exp_method_name](*params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/service/common.py", line 26, in exp_authenticate\n    res_users = Registry(db)[\'res.users\']\n                ^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 106, in __new__\n    return cls.new(db_name)\n           ^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 114, in new\n    registry.init(db_name)\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 206, in init\n    with closing(self.cursor()) as cr:\n                 ^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 1005, in cursor\n    return self._db.cursor()\n           ^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 785, in cursor\n    return Cursor(self.__pool, self.__dbname, self.__dsn)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 288, in __init__\n    self._cnx = pool.borrow(dsn)\n                ^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 712, in borrow\n    result = psycopg2.connect(\n             ^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npsycopg2.OperationalError: connection to server at "192.168.1.1", port 5432 failed: FATAL:  database "aguirrex-sirius-odoo" does not exist\n\n'>
+2025-04-09 02:54:00,513 - mcp_odoo_server - ERROR - Verificación inicial de conexión Odoo: FALLÓ. Revisa logs y configuración.
+2025-04-09 02:54:00,514 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 02:54:19,315 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 02:54:19,316 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 02:54:19,316 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 02:54:19,316 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo.odoo.com, DB: aguirrex-sirius-odoo, User: Administrador
+2025-04-09 02:54:19,320 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 02:54:19,333 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 02:54:19,334 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 02:54:19,335 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo.odoo.com/xmlrpc/2/common
+2025-04-09 02:54:19,614 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 02:54:19,617 - mcp_odoo_server - DEBUG - Autenticando usuario 'Administrador' en DB 'aguirrex-sirius-odoo'...
+2025-04-09 02:54:19,823 - mcp_odoo_server - ERROR - Error XML-RPC Odoo: Fault 1 - Traceback (most recent call last):
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 104, in __new__
+    return cls.registries[db_name]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: 'aguirrex-sirius-odoo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 165, in xmlrpc_2
+    response = self._xmlrpc(service)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 139, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/http.py", line 398, in dispatch_rpc
+    return dispatch(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/service/common.py", line 58, in dispatch
+    return g[exp_method_name](*params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/service/common.py", line 26, in exp_authenticate
+    res_users = Registry(db)['res.users']
+                ^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 106, in __new__
+    return cls.new(db_name)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 114, in new
+    registry.init(db_name)
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 206, in init
+    with closing(self.cursor()) as cr:
+                 ^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 1005, in cursor
+    return self._db.cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 785, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 712, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "192.168.1.1", port 5432 failed: FATAL:  database "aguirrex-sirius-odoo" does not exist
+
+Traceback (most recent call last):
+  File "/home/josefdc/hackathon_odoo/mcp_odoo_fresh/mcp_odoo_server.py", line 86, in get_odoo_connection_details
+    uid = common.authenticate(ODOO_DB, ODOO_USER, ODOO_PASSWORD, {})
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1122, in __call__
+    return self.__send(self.__name, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1461, in __request
+    response = self.__transport.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1166, in request
+    return self.single_request(host, handler, request_body, verbose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1182, in single_request
+    return self.parse_response(resp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1351, in parse_response
+    return u.close()
+           ^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 668, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault 1: 'Traceback (most recent call last):\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 104, in __new__\n    return cls.registries[db_name]\n           ~~~~~~~~~~~~~~^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/lru.py", line 33, in __getitem__\n    a = self.d[obj]\n        ~~~~~~^^^^^\nKeyError: \'aguirrex-sirius-odoo\'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 165, in xmlrpc_2\n    response = self._xmlrpc(service)\n               ^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 139, in _xmlrpc\n    result = dispatch_rpc(service, method, params)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/http.py", line 398, in dispatch_rpc\n    return dispatch(method, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/service/common.py", line 58, in dispatch\n    return g[exp_method_name](*params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/service/common.py", line 26, in exp_authenticate\n    res_users = Registry(db)[\'res.users\']\n                ^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 106, in __new__\n    return cls.new(db_name)\n           ^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 114, in new\n    registry.init(db_name)\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 206, in init\n    with closing(self.cursor()) as cr:\n                 ^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 1005, in cursor\n    return self._db.cursor()\n           ^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 785, in cursor\n    return Cursor(self.__pool, self.__dbname, self.__dsn)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 288, in __init__\n    self._cnx = pool.borrow(dsn)\n                ^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 712, in borrow\n    result = psycopg2.connect(\n             ^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npsycopg2.OperationalError: connection to server at "192.168.1.1", port 5432 failed: FATAL:  database "aguirrex-sirius-odoo" does not exist\n\n'>
+2025-04-09 02:54:20,078 - mcp_odoo_server - ERROR - Verificación inicial de conexión Odoo: FALLÓ. Revisa logs y configuración.
+2025-04-09 02:54:20,079 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 02:54:21,178 - mcp_odoo_server - INFO - Tool: listar_productos ejecutado.
+2025-04-09 02:54:21,179 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo.odoo.com/xmlrpc/2/common
+2025-04-09 02:54:21,465 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 02:54:21,467 - mcp_odoo_server - DEBUG - Autenticando usuario 'Administrador' en DB 'aguirrex-sirius-odoo'...
+2025-04-09 02:54:21,676 - mcp_odoo_server - ERROR - Error XML-RPC Odoo: Fault 1 - Traceback (most recent call last):
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 104, in __new__
+    return cls.registries[db_name]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: 'aguirrex-sirius-odoo'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 165, in xmlrpc_2
+    response = self._xmlrpc(service)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 139, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/http.py", line 398, in dispatch_rpc
+    return dispatch(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/service/common.py", line 58, in dispatch
+    return g[exp_method_name](*params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/service/common.py", line 26, in exp_authenticate
+    res_users = Registry(db)['res.users']
+                ^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 106, in __new__
+    return cls.new(db_name)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 114, in new
+    registry.init(db_name)
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 206, in init
+    with closing(self.cursor()) as cr:
+                 ^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 1005, in cursor
+    return self._db.cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 785, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odoo/src/odoo/odoo/sql_db.py", line 712, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "192.168.1.1", port 5432 failed: FATAL:  database "aguirrex-sirius-odoo" does not exist
+
+Traceback (most recent call last):
+  File "/home/josefdc/hackathon_odoo/mcp_odoo_fresh/mcp_odoo_server.py", line 86, in get_odoo_connection_details
+    uid = common.authenticate(ODOO_DB, ODOO_USER, ODOO_PASSWORD, {})
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1122, in __call__
+    return self.__send(self.__name, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1461, in __request
+    response = self.__transport.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1166, in request
+    return self.single_request(host, handler, request_body, verbose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1182, in single_request
+    return self.parse_response(resp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 1351, in parse_response
+    return u.close()
+           ^^^^^^^^^
+  File "/home/josefdc/miniconda3/lib/python3.12/xmlrpc/client.py", line 668, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault 1: 'Traceback (most recent call last):\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 104, in __new__\n    return cls.registries[db_name]\n           ~~~~~~~~~~~~~~^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/lru.py", line 33, in __getitem__\n    a = self.d[obj]\n        ~~~~~~^^^^^\nKeyError: \'aguirrex-sirius-odoo\'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 165, in xmlrpc_2\n    response = self._xmlrpc(service)\n               ^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/addons/base/controllers/rpc.py", line 139, in _xmlrpc\n    result = dispatch_rpc(service, method, params)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/http.py", line 398, in dispatch_rpc\n    return dispatch(method, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/service/common.py", line 58, in dispatch\n    return g[exp_method_name](*params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/service/common.py", line 26, in exp_authenticate\n    res_users = Registry(db)[\'res.users\']\n                ^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 106, in __new__\n    return cls.new(db_name)\n           ^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 114, in new\n    registry.init(db_name)\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 206, in init\n    with closing(self.cursor()) as cr:\n                 ^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/modules/registry.py", line 1005, in cursor\n    return self._db.cursor()\n           ^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 785, in cursor\n    return Cursor(self.__pool, self.__dbname, self.__dsn)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 288, in __init__\n    self._cnx = pool.borrow(dsn)\n                ^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun\n    return caller(func, *(extras + args), **kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/tools/func.py", line 97, in locked\n    return func(inst, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/odoo/src/odoo/odoo/sql_db.py", line 712, in borrow\n    result = psycopg2.connect(\n             ^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect\n    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npsycopg2.OperationalError: connection to server at "192.168.1.1", port 5432 failed: FATAL:  database "aguirrex-sirius-odoo" does not exist\n\n'>
+2025-04-09 02:56:35,228 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 02:56:35,229 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 02:56:35,229 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 02:56:35,229 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: Administrador
+2025-04-09 02:56:35,233 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 02:56:35,247 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 02:56:35,248 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 02:56:35,249 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 02:56:35,722 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 02:56:35,724 - mcp_odoo_server - DEBUG - Autenticando usuario 'Administrador' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 02:56:35,895 - mcp_odoo_server - ERROR - Fallo la autenticación Odoo para usuario 'Administrador' en DB 'aguirrex-sirius-odoo-production-19589711'. Verifica credenciales.
+2025-04-09 02:56:35,901 - mcp_odoo_server - ERROR - Verificación inicial de conexión Odoo: FALLÓ. Revisa logs y configuración.
+2025-04-09 02:56:35,903 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 02:56:45,632 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 02:56:45,632 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 02:56:45,632 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 02:56:45,632 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: Administrador
+2025-04-09 02:56:45,636 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 02:56:45,651 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 02:56:45,652 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 02:56:45,653 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 02:56:45,934 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 02:56:45,935 - mcp_odoo_server - DEBUG - Autenticando usuario 'Administrador' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 02:56:46,136 - mcp_odoo_server - ERROR - Fallo la autenticación Odoo para usuario 'Administrador' en DB 'aguirrex-sirius-odoo-production-19589711'. Verifica credenciales.
+2025-04-09 02:56:46,141 - mcp_odoo_server - ERROR - Verificación inicial de conexión Odoo: FALLÓ. Revisa logs y configuración.
+2025-04-09 02:56:46,143 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 02:56:47,428 - mcp_odoo_server - INFO - Tool: listar_productos ejecutado.
+2025-04-09 02:56:47,430 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 02:56:47,724 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 02:56:47,727 - mcp_odoo_server - DEBUG - Autenticando usuario 'Administrador' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 02:56:47,924 - mcp_odoo_server - ERROR - Fallo la autenticación Odoo para usuario 'Administrador' en DB 'aguirrex-sirius-odoo-production-19589711'. Verifica credenciales.
+2025-04-09 02:57:39,052 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 02:57:39,052 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 02:57:39,052 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 02:57:39,052 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 02:57:39,056 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 02:57:39,070 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 02:57:39,071 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 02:57:39,072 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 02:57:39,363 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 02:57:39,366 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 02:57:39,919 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 02:57:39,921 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 02:57:39,923 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 02:57:39,924 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 02:57:40,557 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 02:57:40,560 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 02:58:02,343 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 02:58:02,344 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 02:58:02,344 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 02:58:02,344 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 02:58:02,348 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 02:58:02,362 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 02:58:02,363 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 02:58:02,364 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 02:58:02,650 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 02:58:02,653 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 02:58:03,391 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 02:58:03,393 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 02:58:03,396 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 02:58:03,398 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 02:58:04,195 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 02:58:04,198 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 02:58:06,483 - mcp_odoo_server - INFO - Tool: listar_productos ejecutado.
+2025-04-09 02:58:06,484 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 02:58:06,809 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 02:58:06,812 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 02:58:07,362 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 02:58:07,364 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 02:58:07,366 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 02:58:07,368 - mcp_odoo_server - DEBUG - Odoo Call: product.product.search_read, domain=[['sale_ok', '=', True]], fields=['id', 'name', 'default_code', 'list_price'], limit=20
+2025-04-09 02:58:07,664 - mcp_odoo_server - INFO - Odoo devolvió 20 producto(s) (límite 20).
