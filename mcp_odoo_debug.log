@@ -1298,3 +1298,537 @@ xmlrpc.client.Fault: <Fault 1: 'Traceback (most recent call last):\n  File "/hom
 2025-04-09 02:58:07,366 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
 2025-04-09 02:58:07,368 - mcp_odoo_server - DEBUG - Odoo Call: product.product.search_read, domain=[['sale_ok', '=', True]], fields=['id', 'name', 'default_code', 'list_price'], limit=20
 2025-04-09 02:58:07,664 - mcp_odoo_server - INFO - Odoo devolvió 20 producto(s) (límite 20).
+2025-04-09 04:00:36,072 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:00:36,073 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:00:36,073 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:00:36,073 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:00:36,077 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:00:36,091 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:00:36,092 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:00:36,093 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:00:36,531 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:00:36,535 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:00:37,099 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:00:37,103 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:00:37,106 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:00:37,108 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:00:37,750 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:00:37,754 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 04:03:14,212 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:03:14,213 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:03:14,213 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:03:14,213 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:03:14,217 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:03:14,231 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:03:14,232 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:03:14,233 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:03:14,523 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:03:14,526 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:03:15,081 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:03:15,083 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:03:15,085 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:03:15,087 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:03:15,833 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:03:15,836 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 04:06:34,796 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:06:34,796 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:06:34,796 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:06:34,796 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:06:34,800 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:06:34,815 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:06:34,816 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:06:34,816 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:06:35,108 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:06:35,111 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:06:35,901 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:06:35,904 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:06:35,906 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:06:35,908 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:06:36,754 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:06:36,757 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 04:12:51,300 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:12:51,301 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:12:51,301 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:12:51,301 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:12:51,305 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:12:51,319 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:12:51,320 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:12:51,321 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:12:51,753 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:12:51,756 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:12:52,322 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:12:52,325 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:12:52,327 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:12:52,330 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:12:52,621 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:12:52,625 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 04:26:08,882 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:26:08,882 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:26:08,882 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:26:08,882 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:26:08,886 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:26:08,901 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:26:08,902 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:26:08,902 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:26:09,345 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:26:09,347 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:26:09,904 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:26:09,907 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:26:09,909 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:26:09,912 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:26:10,555 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:26:10,559 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 04:31:08,745 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:31:08,746 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:31:08,746 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:31:08,746 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:31:08,750 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:31:08,764 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:31:08,765 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:31:08,765 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:31:09,050 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:31:09,052 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:31:09,706 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:31:09,709 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:31:09,711 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:31:09,713 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:31:10,004 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:31:10,008 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 04:31:50,153 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:31:50,154 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:31:50,154 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:31:50,154 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:31:50,158 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:31:50,172 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:31:50,173 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:31:50,174 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:31:50,461 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:31:50,464 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:31:51,015 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:31:51,017 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:31:51,019 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:31:51,022 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:31:51,314 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:31:51,317 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 04:37:25,108 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:37:25,109 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:37:25,109 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:37:25,109 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:37:25,115 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:37:25,137 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:37:25,139 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:37:25,140 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:37:25,691 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:37:25,693 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:37:26,312 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:37:26,314 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:37:26,316 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:37:26,319 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:37:26,661 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:37:26,663 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 04:38:07,882 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:38:07,882 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:38:07,883 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:38:07,883 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:38:07,889 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:38:07,912 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:38:07,914 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:38:07,915 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:38:08,238 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:38:08,241 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:38:08,808 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:38:08,811 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:38:08,813 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:38:08,815 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:38:09,151 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:38:09,153 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 04:51:33,083 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:51:33,087 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:51:33,087 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:51:33,087 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:51:33,105 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:51:33,175 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:51:33,179 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:51:33,183 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:51:37,369 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:51:37,374 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:51:37,881 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:51:37,884 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:51:37,887 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:51:37,893 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:51:38,700 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:51:38,704 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 04:52:55,357 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:52:55,359 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:52:55,359 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:52:55,360 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:52:55,374 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:52:55,403 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:52:55,405 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:52:55,407 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:52:55,739 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:52:55,741 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:52:56,526 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:52:56,530 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:52:56,534 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:52:56,540 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:52:56,923 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:52:56,929 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 04:52:58,591 - mcp_odoo_server - INFO - Ejecutando herramienta 'buscar_cliente' con nombre: 'margen'
+2025-04-09 04:52:58,596 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:52:58,968 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:52:58,972 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:52:59,598 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:52:59,603 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:52:59,608 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:52:59,614 - mcp_odoo_server - DEBUG - Odoo Call: model='res.partner', method='search_read', domain=[['name', 'ilike', 'margen']], fields=['id', 'name', 'email', 'phone'], limit=5
+2025-04-09 04:52:59,979 - mcp_odoo_server - INFO - Odoo devolvió 0 cliente(s) para 'margen'.
+2025-04-09 04:55:03,618 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:55:03,620 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:55:03,620 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:55:03,620 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:55:03,637 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:55:03,709 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:55:03,713 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:55:03,717 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:55:04,113 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:55:04,118 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:55:04,671 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:55:04,674 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:55:04,678 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:55:04,682 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:55:05,171 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:55:05,176 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 04:57:05,140 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:57:05,141 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:57:05,141 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:57:05,141 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:57:05,148 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:57:05,172 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:57:05,173 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:57:05,174 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:57:05,505 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:57:05,507 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:57:06,077 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:57:06,080 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:57:06,083 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:57:06,089 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:57:06,444 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:57:06,448 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 04:58:18,312 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 04:58:18,313 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 04:58:18,313 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 04:58:18,313 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 04:58:18,325 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 04:58:18,400 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 04:58:18,404 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 04:58:18,409 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 04:58:18,911 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 04:58:18,916 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 04:58:19,396 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 04:58:19,398 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 04:58:19,399 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 04:58:19,401 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 04:58:19,742 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 04:58:19,746 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 05:00:03,885 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 05:00:03,886 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 05:00:03,887 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 05:00:03,887 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 05:00:03,896 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 05:00:03,961 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 05:00:03,965 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 05:00:03,968 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:00:04,361 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:00:04,364 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:00:04,972 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:00:04,977 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:00:04,982 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:00:04,990 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 05:00:05,415 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 05:00:05,420 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 05:00:07,239 - mcp_odoo_server - INFO - Tool: listar_productos ejecutado.
+2025-04-09 05:00:07,243 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:00:07,617 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:00:07,621 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:00:08,249 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:00:08,253 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:00:08,256 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:00:08,261 - mcp_odoo_server - DEBUG - Odoo Call: product.product.search_read, domain=[['sale_ok', '=', True]], fields=['id', 'name', 'default_code', 'list_price'], limit=20
+2025-04-09 05:00:08,675 - mcp_odoo_server - INFO - Odoo devolvió 20 producto(s) (límite 20).
+2025-04-09 05:02:10,289 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 05:02:10,290 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 05:02:10,290 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 05:02:10,290 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 05:02:10,297 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 05:02:10,322 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 05:02:10,324 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 05:02:10,325 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:02:10,931 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:02:10,935 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:02:11,746 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:02:11,750 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:02:11,754 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:02:11,759 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 05:02:12,181 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 05:02:12,186 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 05:46:09,859 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 05:46:09,861 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 05:46:09,861 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 05:46:09,861 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 05:46:09,866 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 05:46:09,891 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 05:46:09,893 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 05:46:09,894 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:46:10,340 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:46:10,345 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:46:10,937 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:46:10,939 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:46:10,941 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:46:10,943 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 05:46:11,600 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 05:46:11,602 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 05:46:13,730 - mcp_odoo_server - INFO - Ejecutando herramienta 'buscar_cliente' con nombre: 'Geminio Furniture'
+2025-04-09 05:46:13,731 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:46:14,026 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:46:14,029 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:46:14,583 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:46:14,585 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:46:14,586 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:46:14,589 - mcp_odoo_server - DEBUG - Odoo Call: model='res.partner', method='search_read', domain=[['name', 'ilike', 'Geminio Furniture']], fields=['id', 'name', 'email', 'phone'], limit=5
+2025-04-09 05:46:14,894 - mcp_odoo_server - INFO - Odoo devolvió 0 cliente(s) para 'Geminio Furniture'.
+2025-04-09 05:46:45,581 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 05:46:45,581 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 05:46:45,581 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 05:46:45,581 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 05:46:45,586 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 05:46:45,613 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 05:46:45,614 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 05:46:45,615 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:46:45,912 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:46:45,916 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:46:46,519 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:46:46,520 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:46:46,521 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:46:46,524 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 05:46:46,815 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 05:46:46,816 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 05:46:48,265 - mcp_odoo_server - INFO - Ejecutando herramienta 'buscar_cliente' con nombre: 'Marc Demo'
+2025-04-09 05:46:48,268 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:46:48,557 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:46:48,559 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:46:49,117 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:46:49,119 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:46:49,120 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:46:49,123 - mcp_odoo_server - DEBUG - Odoo Call: model='res.partner', method='search_read', domain=[['name', 'ilike', 'Marc Demo']], fields=['id', 'name', 'email', 'phone'], limit=5
+2025-04-09 05:46:49,423 - mcp_odoo_server - INFO - Odoo devolvió 0 cliente(s) para 'Marc Demo'.
+2025-04-09 05:47:02,899 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 05:47:02,899 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 05:47:02,899 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 05:47:02,899 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 05:47:02,904 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 05:47:02,925 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 05:47:02,926 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 05:47:02,927 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:47:03,214 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:47:03,216 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:47:03,794 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:47:03,795 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:47:03,796 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:47:03,797 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 05:47:04,088 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 05:47:04,089 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 05:47:26,858 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 05:47:26,859 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 05:47:26,859 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 05:47:26,859 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 05:47:26,864 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 05:47:26,892 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 05:47:26,893 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 05:47:26,896 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:47:27,207 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:47:27,208 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:47:27,768 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:47:27,770 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:47:27,773 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:47:27,775 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 05:47:28,088 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 05:47:28,090 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 05:47:29,420 - mcp_odoo_server - INFO - Ejecutando herramienta 'buscar_cliente' con nombre: 'marc demo'
+2025-04-09 05:47:29,421 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:47:29,952 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:47:29,954 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:47:30,406 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:47:30,411 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:47:30,413 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:47:30,416 - mcp_odoo_server - DEBUG - Odoo Call: model='res.partner', method='search_read', domain=[['name', 'ilike', 'marc demo']], fields=['id', 'name', 'email', 'phone'], limit=5
+2025-04-09 05:47:30,718 - mcp_odoo_server - INFO - Odoo devolvió 0 cliente(s) para 'marc demo'.
+2025-04-09 05:48:48,519 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 05:48:48,520 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 05:48:48,520 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 05:48:48,520 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 05:48:48,524 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 05:48:48,549 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 05:48:48,551 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 05:48:48,551 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:48:48,839 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:48:48,845 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:48:49,605 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:48:49,607 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:48:49,608 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:48:49,610 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 05:48:50,618 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 05:48:50,620 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 05:48:52,560 - mcp_odoo_server - INFO - Ejecutando herramienta 'buscar_cliente' con nombre: 'Don Pepe'
+2025-04-09 05:48:52,561 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:48:52,845 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:48:52,847 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:48:53,413 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:48:53,418 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:48:53,419 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:48:53,423 - mcp_odoo_server - DEBUG - Odoo Call: model='res.partner', method='search_read', domain=[['name', 'ilike', 'Don Pepe']], fields=['id', 'name', 'email', 'phone'], limit=5
+2025-04-09 05:48:53,715 - mcp_odoo_server - INFO - Odoo devolvió 1 cliente(s) para 'Don Pepe'.
+2025-04-09 05:49:36,980 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 05:49:36,981 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 05:49:36,981 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 05:49:36,981 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 05:49:36,990 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 05:49:37,026 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 05:49:37,027 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 05:49:37,028 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:49:37,319 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:49:37,323 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:49:37,874 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:49:37,876 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:49:37,877 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:49:37,878 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 05:49:38,166 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 05:49:38,171 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 05:49:39,796 - mcp_odoo_server - INFO - Ejecutando herramienta 'buscar_cliente' con nombre: 'Juan Aguirre'
+2025-04-09 05:49:39,796 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:49:40,085 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:49:40,087 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:49:40,643 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:49:40,645 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:49:40,646 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:49:40,649 - mcp_odoo_server - DEBUG - Odoo Call: model='res.partner', method='search_read', domain=[['name', 'ilike', 'Juan Aguirre']], fields=['id', 'name', 'email', 'phone'], limit=5
+2025-04-09 05:49:40,941 - mcp_odoo_server - INFO - Odoo devolvió 1 cliente(s) para 'Juan Aguirre'.
+2025-04-09 05:49:59,748 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 05:49:59,748 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 05:49:59,748 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 05:49:59,748 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 05:49:59,753 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 05:49:59,777 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 05:49:59,778 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 05:49:59,779 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:50:00,062 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:50:00,068 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:50:00,616 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:50:00,617 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:50:00,618 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:50:00,619 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 05:50:00,915 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 05:50:00,916 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 05:50:02,535 - mcp_odoo_server - INFO - Tool: listar_productos ejecutado.
+2025-04-09 05:50:02,537 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:50:02,854 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:50:02,855 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:50:03,409 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:50:03,410 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:50:03,411 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:50:03,413 - mcp_odoo_server - DEBUG - Odoo Call: product.product.search_read, domain=[['sale_ok', '=', True]], fields=['id', 'name', 'default_code', 'list_price'], limit=20
+2025-04-09 05:50:03,707 - mcp_odoo_server - INFO - Odoo devolvió 20 producto(s) (límite 20).
+2025-04-09 05:51:10,129 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 05:51:10,130 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 05:51:10,130 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 05:51:10,130 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 05:51:10,135 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 05:51:10,162 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 05:51:10,163 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 05:51:10,164 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:51:10,451 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:51:10,452 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:51:11,010 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:51:11,012 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:51:11,014 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:51:11,016 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 05:51:11,303 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 05:51:11,305 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 05:51:17,002 - mcp_odoo_server - INFO - Ejecutando herramienta 'crear_cotizacion' para cliente ID: 10
+2025-04-09 05:51:17,003 - mcp_odoo_server - DEBUG - Líneas recibidas: [{'product_id': 45, 'product_uom_qty': 3}, {'product_id': 167, 'product_uom_qty': 3}, {'product_id': 99, 'product_uom_qty': 3}]
+2025-04-09 05:51:17,004 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:51:17,288 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:51:17,289 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:51:17,904 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:51:17,906 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:51:17,907 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:51:17,909 - mcp_odoo_server - DEBUG - Odoo Call: model='sale.order', method='create', values={'partner_id': 10, 'order_line': [(0, 0, {'product_id': 45, 'product_uom_qty': 3}), (0, 0, {'product_id': 167, 'product_uom_qty': 3}), (0, 0, {'product_id': 99, 'product_uom_qty': 3})]}
+2025-04-09 05:51:18,287 - mcp_odoo_server - INFO - Cotización creada exitosamente en Odoo con ID: 5
+2025-04-09 05:51:36,446 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 05:51:36,447 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 05:51:36,447 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 05:51:36,447 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 05:51:36,452 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 05:51:36,476 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 05:51:36,477 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 05:51:36,478 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:51:36,762 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:51:36,763 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:51:37,318 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:51:37,320 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:51:37,321 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:51:37,323 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 05:51:37,602 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 05:51:37,604 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 05:51:39,140 - mcp_odoo_server - INFO - Ejecutando herramienta 'confirmar_cotizacion' para ID: 5
+2025-04-09 05:51:39,140 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:51:39,422 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:51:39,423 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:51:40,109 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:51:40,110 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:51:40,111 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:51:40,419 - mcp_odoo_server - INFO - Estado cotización 5 ANTES: 'draft'
+2025-04-09 05:51:40,421 - mcp_odoo_server - DEBUG - Odoo Call: model='sale.order', method='action_confirm', args=[[5]]
+2025-04-09 05:51:40,781 - mcp_odoo_server - INFO - 'action_confirm' llamado para cotización 5.
+2025-04-09 05:51:40,895 - mcp_odoo_server - INFO - Estado cotización 5 DESPUÉS: 'sale'
+2025-04-09 05:52:14,355 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 05:52:14,356 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 05:52:14,356 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 05:52:14,356 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 05:52:14,361 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 05:52:14,384 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 05:52:14,386 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 05:52:14,387 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:52:14,669 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:52:14,670 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:52:15,260 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:52:15,264 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:52:15,265 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:52:15,267 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 05:52:15,556 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 05:52:15,558 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
+2025-04-09 05:52:17,370 - mcp_odoo_server - INFO - Tool: listar_productos ejecutado.
+2025-04-09 05:52:17,374 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:52:17,694 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:52:17,695 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:52:18,250 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:52:18,252 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:52:18,253 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:52:18,255 - mcp_odoo_server - DEBUG - Odoo Call: product.product.search_read, domain=[['sale_ok', '=', True]], fields=['id', 'name', 'default_code', 'list_price'], limit=20
+2025-04-09 05:52:18,552 - mcp_odoo_server - INFO - Odoo devolvió 20 producto(s) (límite 20).
+2025-04-09 05:52:39,414 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo...
+2025-04-09 05:52:39,415 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-09 05:52:39,415 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-09 05:52:39,415 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com, DB: aguirrex-sirius-odoo-production-19589711, User: admin
+2025-04-09 05:52:39,420 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-09 05:52:39,442 - mcp_odoo_server - INFO - Ejecutando bloque principal (__name__ == '__main__').
+2025-04-09 05:52:39,443 - mcp_odoo_server - INFO - Realizando verificación inicial de conexión a Odoo...
+2025-04-09 05:52:39,444 - mcp_odoo_server - DEBUG - Intentando conectar a common: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/common
+2025-04-09 05:52:39,823 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-09 05:52:39,825 - mcp_odoo_server - DEBUG - Autenticando usuario 'admin' en DB 'aguirrex-sirius-odoo-production-19589711'...
+2025-04-09 05:52:40,439 - mcp_odoo_server - DEBUG - Autenticación Odoo exitosa. UID: 2
+2025-04-09 05:52:40,441 - mcp_odoo_server - DEBUG - Creando proxy para object: https://aguirrex-sirius-odoo-production-19589711.dev.odoo.com/xmlrpc/2/object
+2025-04-09 05:52:40,442 - mcp_odoo_server - INFO - Conexión Odoo preparada (UID: 2).
+2025-04-09 05:52:40,444 - mcp_odoo_server - INFO - Verificación inicial de conexión Odoo: ÉXITO.
+2025-04-09 05:52:40,734 - mcp_odoo_server - INFO - Verificación de acceso ('res.users', 'read'): True
+2025-04-09 05:52:40,736 - mcp_odoo_server - INFO - Iniciando el servidor MCP FastMCP en modo stdio...
