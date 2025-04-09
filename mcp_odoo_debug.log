@@ -1,0 +1,24 @@
+2025-04-08 21:53:16,185 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo (entorno fresco)...
+2025-04-08 21:53:16,185 - mcp_odoo_server - WARNING - Archivo .env no encontrado en /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env. Usando variables de entorno del sistema si existen.
+2025-04-08 21:53:16,185 - mcp_odoo_server - CRITICAL - Error Crítico: Faltan variables de entorno o están vacías: ODOO_URL, ODOO_DB, ODOO_USER, ODOO_PASSWORD. Revisa tu archivo .env o el entorno.
+2025-04-08 21:53:36,316 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo (entorno fresco)...
+2025-04-08 21:53:36,316 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-08 21:53:36,316 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-08 21:53:36,316 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: http://localhost:8069, DB: pipix, User: josepipe0909@gmail.com
+2025-04-08 21:53:36,321 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-08 21:55:39,764 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo (entorno fresco)...
+2025-04-08 21:55:39,765 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-08 21:55:39,765 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-08 21:55:39,765 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: http://localhost:8069, DB: pipix, User: josepipe0909@gmail.com
+2025-04-08 21:55:39,767 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-08 21:55:46,902 - mcp_odoo_server - INFO - Iniciando el servidor MCP para Odoo (entorno fresco)...
+2025-04-08 21:55:46,903 - mcp_odoo_server - INFO - Archivo .env cargado desde: /home/josefdc/hackathon_odoo/mcp_odoo_fresh/.env
+2025-04-08 21:55:46,903 - mcp_odoo_server - INFO - Variables de entorno de Odoo cargadas y validadas.
+2025-04-08 21:55:46,903 - mcp_odoo_server - DEBUG - Configuración Odoo -> URL: http://localhost:8069, DB: pipix, User: josepipe0909@gmail.com
+2025-04-08 21:55:46,905 - mcp_odoo_server - INFO - Instancia de FastMCP<'quindicolor-odoo-agent'> creada.
+2025-04-08 21:55:56,857 - mcp_odoo_server - INFO - Ejecutando herramienta 'buscar_cliente' con nombre: 'Marc Demo'
+2025-04-08 21:55:56,859 - mcp_odoo_server - DEBUG - Intentando conectar a common: http://localhost:8069/xmlrpc/2/common
+2025-04-08 21:55:58,129 - mcp_odoo_server - DEBUG - Conexión a 'common' exitosa.
+2025-04-08 21:55:58,130 - mcp_odoo_server - DEBUG - Autenticando usuario 'josepipe0909@gmail.com' en DB 'pipix'...
+2025-04-08 21:55:58,506 - mcp_odoo_server - ERROR - Fallo la autenticación Odoo para usuario 'josepipe0909@gmail.com' en DB 'pipix'. Verifica credenciales.
+2025-04-08 21:55:58,507 - mcp_odoo_server - ERROR - buscar_cliente: No se pudo obtener la conexión a Odoo.
