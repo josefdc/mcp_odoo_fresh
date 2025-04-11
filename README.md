@@ -153,3 +153,5 @@ Puedes usar los guiones proporcionados anteriormente (adaptados a tus productos/
 * Implementar streaming de texto en la interfaz de voz.
 * Optimizar el arranque/conexión del servidor MCP.
 * Usar un gr.Chatbot visible en la app de voz para mostrar historial
+
+este proyecto nos hizo ganadores jeje 
