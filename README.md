@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/josefdc-mcp-odoo-fresh-badge.png)](https://mseep.ai/app/josefdc-mcp-odoo-fresh)
+
 # Agente Inteligente QuindíColor: Odoo + MCP + OpenAI
 
 ## Proyecto Hackathon 🚀
